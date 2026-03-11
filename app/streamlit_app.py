@@ -603,9 +603,16 @@ elif mode == "📁  Fleet Analysis":
 
     st.markdown("""
 <style>
-[data-testid="stFileUploadDropzone"] p,
-[data-testid="stFileUploadDropzone"] small,
-[data-testid="stFileUploadDropzone"] span {
+[data-testid="stFileUploadDropzone"] * {
+    color: black !important;
+}
+section[data-testid="stFileUploadDropzone"] {
+    background-color: white !important;
+}
+.uploadedFile {
+    color: black !important;
+}
+div[data-testid="stFileUploader"] * {
     color: black !important;
 }
 </style>
