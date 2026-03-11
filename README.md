@@ -1,6 +1,6 @@
-﻿---
+---
 title: Ecocharge
-emoji: 🔋
+emoji: ??
 colorFrom: green
 colorTo: blue
 sdk: docker
