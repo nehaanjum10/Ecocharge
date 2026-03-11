@@ -601,6 +601,15 @@ elif mode == "📁  Fleet Analysis":
         st.dataframe(template_df, use_container_width=True)
         st.download_button("⬇️ Download Template", template_df.to_csv(index=False), "template.csv", mime="text/csv")
 
+    st.markdown("""
+<style>
+[data-testid="stFileUploadDropzone"] p,
+[data-testid="stFileUploadDropzone"] small,
+[data-testid="stFileUploadDropzone"] span {
+    color: black !important;
+}
+</style>
+""", unsafe_allow_html=True)
     col_up, col_opt = st.columns([2,1])
     with col_up:
         uploaded = st.file_uploader("📂 Upload Fleet CSV", type=['csv'])
